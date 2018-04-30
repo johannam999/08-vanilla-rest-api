@@ -64,7 +64,6 @@ module.exports = function routeBox(router) {
 
   router.delete('/api/v1/box', (req, res) => {
     if (!req.url.query.id) {
-      
       res.writeHead(400, { 'Content-Type': 'application/json' });
       res.write(JSON.stringify(item));
       res.end();
